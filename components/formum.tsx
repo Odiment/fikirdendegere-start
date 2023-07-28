@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import Link from "next/link"
 import { registerSchema } from "@/validators/auth"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -38,6 +39,12 @@ import { Butonum } from "@/components/butonum"
 type Input = z.infer<typeof registerSchema>
 
 export function Formum() {
+  const [name, setName] = useState("")
+  const [description, setDescription] = useState("")
+
+  console.log(name)
+  console.log(description)
+
   const form = useForm<Input>({
     resolver: zodResolver(registerSchema),
     defaultValues: {

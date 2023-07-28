@@ -2,10 +2,11 @@ import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
-/* import { CardDemo } from "@/components/CardDemo" */
-import { Butonum } from "@/components/butonum"
+import { CardDemo } from "@/components/CardDemo"
+
+/* import { Butonum } from "@/components/butonum"
 import { Formum } from "@/components/formum"
-import { Uyarim } from "@/components/uyarim"
+import { Uyarim } from "@/components/uyarim" */
 
 /* import { ConfirmEventButton } from "@/components/confirm-event-button"
 import { EventCalendar } from "@/components/event-calendar" */
@@ -22,12 +23,10 @@ export default function IndexPage() {
         <p className="text-3xl font-bold">Fikirden Değere</p>
         <p className="text-2xl font-bold">Fikir Öneri Formu</p>
 
-        <Formum />
-        <Butonum />
-      </div>
-      {/*       <div>
+        {/*         <Formum />
+        <Butonum /> */}
         <CardDemo />
-      </div> */}
+      </div>
     </section>
   )
 }
