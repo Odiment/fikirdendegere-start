@@ -1,10 +1,9 @@
 "use client"
 
-/* import "bootstrap/dist/css/bootstrap.min.css" */
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import supabase from "@/utils/supabase"
-import { fikirSchema } from "@/validators/auth"
+import { fikirSchema } from "@/validators/fikir"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
